@@ -1,16 +1,12 @@
 /*global jQuery: true */
 
 /*!
-   --------------------------------
-   Infinite Scroll
-   --------------------------------
-   + https://github.com/paulirish/infinite-scroll
-   + version 2.0.2
-   + Copyright 2011/12 Paul Irish & Luke Shumard
-   + Licensed under the MIT license
-
-   + Documentation: http://infinite-scroll.com/
-*/
+ * Infinite Scroll v3.0.0
+ *
+ * Copyright 2014 / Paul Irish & Luke Shumard
+ * Licensed under the MIT license (www.opensource.org/licenses/MIT)
+ *
+ */
 
 // Uses AMD or browser globals to create a jQuery plugin.
 (function (factory) {
