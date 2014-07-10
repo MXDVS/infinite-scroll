@@ -7,49 +7,49 @@ The jQuery and WordPress Plugins:
 * jQuery Plugin <http://www.infinite-scroll.com/infinite-scroll-jquery-plugin/> `v2.0.2`
 * WordPress Plugin <http://www.infinite-scroll.com/installation/>
 
-##Options##
----
-**debug**  
-Uses `console.log` to provide info about the the plugin and as it's happening. Only intended to be  
-*(Default: false)*
-
-**prefill**  
-When the document is smaller than the window, load data until the document is larger or links are exhausted  
-*(Default: false)*
-
 
 ##Methods##
----
-You can call on any Infinite Scroll method by using `$('.selector').infinitescroll('method-name');`.
+A method is a command you can use to control Infinite Scroll once the plugin has been initialized. You can call on any Infinite Scroll method by using `$('.selector').infinitescroll('method-name');`.
 
 **Bind**  
 `$('.selector').infinitescroll('bind');`
-Binds infinite scroll check on scroll to see if the plugin needs to load more content.  
+Binds selector to check on scroll to see if the plugin needs to load more content.
 
-**Unbind**  
-Desc  
+**Unbind**
+`$('.selector').infinitescroll('unbind');`
+Unbinds selector to check on scroll to see if the plugin needs to load more content.
 
 **Destroy**  
-Desc  
+`$('.selector').infinitescroll('destroy');`
+Destroys the instance of infinite scroll. This is create a flag to not load anymore content and will unbind all events.
 
 **Pause**  
-Desc  
+`$('.selector').infinitescroll('pause');`
+Pausing the plugin will temporarily create a flag to not retrieve content on scroll. To unpause, use the method `resume`.
 
 **Resume**  
-Desc  
+`$('.selector').infinitescroll('resume');`
+Destroys the instance of infinite scroll. This is create a flag to not load anymore content and will unbind all events.
 
 **Toggle**  
-Desc  
+`$('.selector').infinitescroll('toggle');`
+Toggling will switch the `pause` value of the plugin, either pausing or resuming the plugin.
 
 **Retrieve**  
-Desc  
+`$('.selector').infinitescroll('retrieve');`
+Retrieve will load the next page of content if available.
 
 **Scroll**  
-Desc  
+`$('.selector').infinitescroll('scroll');`
+Scroll will check to see if the next page is to be loaded, the same thing as if a user scrolled.
 
 **Update**  
-Desc  
+`$('.selector').infinitescroll('update', {debug: true});`
+The `update` method is used to update options in the instance of Infinite Scroll after initialization. The second argument is the object of options that you want to update.
 
+
+##Options##
+Better documentation coming soon.
 
 ```javascript
 $('.selector').infinitescroll({
@@ -91,14 +91,8 @@ $('.selector').infinitescroll({
 });
 ```
 
-In addition, you can pause infinite scroll to stop it from triggering, and later resume it.
 
-```javascript
-$('.selector').infinitescroll('pause');
-$('.selector').infinitescroll('resume');
-```
-
-## Examples
+### Examples
 
 ### Scrolling inside an element
 
