@@ -12,39 +12,39 @@ The jQuery and WordPress Plugins:
 A method is a command you can use to control Infinite Scroll once the plugin has been initialized. You can call on any Infinite Scroll method by using `$('.selector').infinitescroll('method-name');`.
 
 **Bind**  
-`$('.selector').infinitescroll('bind');`
+`$('.selector').infinitescroll('bind');`  
 Binds selector to check on scroll to see if the plugin needs to load more content.
 
-**Unbind**
-`$('.selector').infinitescroll('unbind');`
+**Unbind**  
+`$('.selector').infinitescroll('unbind');`  
 Unbinds selector to check on scroll to see if the plugin needs to load more content.
 
 **Destroy**  
-`$('.selector').infinitescroll('destroy');`
+`$('.selector').infinitescroll('destroy');`  
 Destroys the instance of infinite scroll. This is create a flag to not load anymore content and will unbind all events.
 
 **Pause**  
-`$('.selector').infinitescroll('pause');`
+`$('.selector').infinitescroll('pause');`  
 Pausing the plugin will temporarily create a flag to not retrieve content on scroll. To unpause, use the method `resume`.
 
 **Resume**  
-`$('.selector').infinitescroll('resume');`
+`$('.selector').infinitescroll('resume');`  
 Destroys the instance of infinite scroll. This is create a flag to not load anymore content and will unbind all events.
 
 **Toggle**  
-`$('.selector').infinitescroll('toggle');`
+`$('.selector').infinitescroll('toggle');`  
 Toggling will switch the `pause` value of the plugin, either pausing or resuming the plugin.
 
 **Retrieve**  
-`$('.selector').infinitescroll('retrieve');`
+`$('.selector').infinitescroll('retrieve');`  
 Retrieve will load the next page of content if available.
 
 **Scroll**  
-`$('.selector').infinitescroll('scroll');`
+`$('.selector').infinitescroll('scroll');`  
 Scroll will check to see if the next page is to be loaded, the same thing as if a user scrolled.
 
 **Update**  
-`$('.selector').infinitescroll('update', {debug: true});`
+`$('.selector').infinitescroll('update', {debug: true});`  
 The `update` method is used to update options in the instance of Infinite Scroll after initialization. The second argument is the object of options that you want to update.
 
 
